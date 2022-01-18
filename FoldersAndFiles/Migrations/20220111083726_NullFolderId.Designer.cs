@@ -4,6 +4,7 @@ using FoldersAndFiles.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FoldersAndFiles.Migrations
 {
     [DbContext(typeof(FoldersFilesDbContext))]
-    partial class FoldersFilesDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220111083726_NullFolderId")]
+    partial class NullFolderId
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

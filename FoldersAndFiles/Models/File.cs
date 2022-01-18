@@ -11,8 +11,10 @@ namespace FoldersAndFiles.Models
         public string Name { get; set; }
 
 
-        public Folder Folder { get; set; }
+        public Folder? Folder { get; set; }
         public int? FolderId { get; set; }
+
+        
 
     }
 }

@@ -27,7 +27,7 @@ namespace FoldersAndFiles.Controllers
              
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public void Update(FileDto file,int id)
         {
             _Files.EditFile(file,id);

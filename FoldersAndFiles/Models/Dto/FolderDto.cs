@@ -4,6 +4,6 @@
     {
         public string Name { get; set; }
 
-        public int? ContainerId { get; set; }
+        public int? ContainerId { get; set; } = null;
     }
 }
